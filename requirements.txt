@@ -1,7 +1,6 @@
 numpy
 tensorflow
 jsons
-cv2
 PIL
 io
 gdown
