@@ -2,7 +2,6 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 import json
-import cv2
 from tensorflow.keras.models import load_model
 from PIL import Image
 import io
@@ -13,6 +12,7 @@ st.title("Deteksi Minuman")
 # Load model
 model = load_model('model.h5')
 df_grading = pd.read_csv('./Dataset_Grading/Data Minuman - Data Minuman.csv')
+
 # Load labels from JSON
 with open('class_indices.json', 'r') as f:
     labels = json.load(f)
