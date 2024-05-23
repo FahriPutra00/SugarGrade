@@ -1,6 +1,6 @@
 numpy
 tensorflow
-json
+jsons
 cv2
 PIL
 io
