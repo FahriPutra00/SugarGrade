@@ -54,5 +54,5 @@ if picture:
     #input if u buy 1 bottle
     ml = int(st.number_input('Jumlah ukuran kontainer (ml)', min_value=1, max_value=2000, value=1, step=1))
     if ml > 0:
-        gula = (ml * (nutrifacts["Gula/100ml(g)"]))/100
+        gula = (ml * float(nutrifacts["Gula/100ml(g)"]))/100
         st.write(f'Gula dalam minuman: {gula} gram')
