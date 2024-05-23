@@ -26,7 +26,7 @@ def preprocess_image(image_bytes):
     return img
 
 def get_nutrifacts(drink_name):
-    drink = df_grading[df_grading['Nama Minuman'] == drink_name]
+    drink = df_grading[df_grading['Produk'] == drink_name]
     drink = drink[['Gula/Sajian(g)', 'Gula/100ml(g)', 'Grade']].iloc[0]
     return drink
 
