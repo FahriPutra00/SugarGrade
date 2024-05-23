@@ -49,6 +49,10 @@ if picture:
     # Display the prediction
     st.write(f'Predicted: {predicted_class_label}')
     nutrifacts = get_nutrifacts(predicted_class_label)
-    st.write(f'Gula/Sajian(g): {nutrifacts["Gula/Sajian(g)"]}')
     st.write(f'Gula/100ml(g): {nutrifacts["Gula/100ml(g)"]}')
     st.write(f'Grade: {nutrifacts["Grade"]}')
+    #input if u buy 1 bottle
+    ml = st.number_input('Jumlah ukuran kontainer (ml)', min_value=1, max_value=2000, value=1, step=1)
+    if ml > 0:
+        gula = (ml * nutrifacts["Gula/100ml(g)"])/100
+        st.write(f'Gula dalam minuman: {gula} gram')
