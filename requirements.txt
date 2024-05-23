@@ -1,0 +1,8 @@
+numpy
+tensorflow
+json
+cv2
+PIL
+io
+gdown
+os
