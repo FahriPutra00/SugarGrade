@@ -1,7 +1,7 @@
 numpy
 tensorflow
 jsons
-PIL
-io
-gdown
-os
+pillow
+Python-IO
+os-sys
+requests
